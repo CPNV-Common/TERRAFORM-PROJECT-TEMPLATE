@@ -116,7 +116,7 @@ terraform-project/
 
 * Take time to read some readme and find the way you would like to help other developers collaborate with you.
 
-* How to propose a new feature -> [Write an issue first]()
+* How to propose a new feature -> [Write an issue first](https://github.com/CPNV-Common/TERRAFORM-PROJECT-TEMPLATE/issues/new)
 * How to commit -> [We use coventional commits approach](https://www.conventionalcommits.org/en/v1.0.0/)
 * How to use your workflow -> [Our branches strategy is based on Gitflow](https://nvie.com/posts/a-successful-git-branching-model/)
 
@@ -126,4 +126,4 @@ terraform-project/
 
 ## Contact
 
-* Open an issue direclty on this repo
+* Open an [issue](https://github.com/CPNV-Common/TERRAFORM-PROJECT-TEMPLATE/issues/new) direclty on this repo
