@@ -20,7 +20,6 @@ List all dependencies and their version needed by the project as :
 * [VSCode 1.109.3](https://code.visualstudio.com/download)
 * [Terraform v1.14.5](https://developer.hashicorp.com/terraform/install)
 
-
 ### Cloud Provider Configuration (only AWS for now)
 
 * AWS Cloud Provider Accesses (IAM)
@@ -61,12 +60,18 @@ Don’t forget to align the Terraform provider configuration.
 ``` 
 
 
-## Deployment
+## Deployment step
+
+* Init
+
+```
+  terraform -chdir=environments/<stage> init
+```
 
 * Plan
 
 ```
-terraform -chdir=environments/<stage> plan
+  terraform -chdir=environments/<stage> plan
 ```
 
 * Apply
