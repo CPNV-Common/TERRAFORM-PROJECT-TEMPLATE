@@ -48,8 +48,8 @@ Don’t forget to align the Terraform provider configuration.
 //Set the profile to plan and apply the deployment
 //environment/<stage>/provider.tf
   provider "aws" {
-    profile = "dev"
-    region  = "us-west-2"
+    region  = "your-cloud-region"
+    profile = "your-cli-profile"
   }
 ```
 
@@ -58,9 +58,9 @@ Don’t forget to align the Terraform provider configuration.
 //environment/<stage>/backend.tf
   terraform {
     backend "s3" {
-      bucket = "you-bucket-name"
+      bucket = "your-bucket-name"
       key    = "environments/<stage>/terraform.tfstate"
-      region = "you-cloud-region"
+      region = "your-cloud-region"
       profile = "your-cli-profile"
     }
   } 
