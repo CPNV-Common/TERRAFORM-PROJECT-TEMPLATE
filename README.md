@@ -24,7 +24,9 @@ List all dependencies and their version needed by the project as :
 
 * AWS Cloud Provider Accesses (IAM)
   * [IAM Policy sample for EC2](./appendices/aws-iam-ec2-policy.json)
-  * [IAM Policy sample for S3](./appendices/aws-iam-bucket-policy.json)(optional : only if you need to share you terraform state)
+  * Optional : only if you need to share you terraform state
+     * [IAM Policy sample for S3](./appendices/aws-iam-bucket-policy.json)
+     * [IAM Policy sample for DynamoDB](./appendices/aws-iam-dynamodb-policy.json)
 
 * AWS CLI
   * [Install](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) 
