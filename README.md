@@ -24,15 +24,20 @@ List all dependencies and their version needed by the project as :
 
 * AWS Cloud Provider Accesses (IAM)
   * [IAM Policy sample for EC2](./appendices/aws-iam-ec2-policy.json)
-  * Optional : only if you need to share you terraform state
-     * [IAM Policy sample for S3](./appendices/aws-iam-bucket-policy.json)
-     * [IAM Policy sample for DynamoDB](./appendices/aws-iam-dynamodb-policy.json)
+  * Optional : only if you need to share your terraform state
+     * [IAM Policy sample for S3](./appendices/aws-config/iam/aws-iam-bucket-policy.json)
+     * [IAM Policy sample for DynamoDB](./appendices/aws-config/iam/aws-iam-dynamodb-policy.json)
 
 * AWS CLI
   * [Install](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) 
-  * Profile Setup
+  * Profile Setup (to avoid hard coded credentials in terraform deployment script)
   * You need credentials delivered by your Cloud Administrator
-
+  * Optional : only if you need to share your terraform state
+     * S3
+        * [Create S3 Bucket](./appendices/aws-config/cli/bucket-create.sh)
+        * [Enable Bucket Versioning](./appendices/aws-config/cli/bucket-enable-versioning.sh)
+     * DynamoDB
+        * [Create DynamoDb Table](./appendices/aws-config/cli/dynamo-db-create-table.sh)
 ```
   aws configure --profile <stage>
 ```
